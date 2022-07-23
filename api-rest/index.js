@@ -44,7 +44,7 @@ app.post('/users', (request, response) => {
   return response.status(StatusCodes.CREATED).send(newUser);
 });
 
-// Atualização de Registros da base com PUT
+// Atualização de Registros da base de dados com o método HTTP PUT
 
 app.put('/users/:userId', (request, response) => {
   const userId = request.params.userId;
