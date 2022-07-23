@@ -1,9 +1,12 @@
+//Importar o express e o StatusCodes
 import express, { request } from 'express';
 import { StatusCodes } from 'http-status-codes';
 
 const app = express();
+// Criação da porta - Será usado o Heroku com porta dinâmica e alternativamente porta 3000
 const PORT = process.env.PORT || 3000;
 
+// Usuários
 let users = [
   { id: 1, name: 'Aleff Lira', age: 28 },
   { id: 2, name: 'Maria Jaciane', age: 27 }
