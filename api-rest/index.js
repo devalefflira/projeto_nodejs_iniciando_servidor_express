@@ -58,3 +58,14 @@ app.put('/users/:userId', (request, response) => {
   });
   return response.send(updatedUser);
 });
+
+// Aplicação/Implementação do método/verbo HTTP DELETE
+
+app.delete('/users/:userId', (request, response) => {
+  const userId = request.params.userId;
+
+  users = users.filter(user => user.id !== Number(userId));
+
+  return response.status(StatusCodes.NO_CONTENT).send();
+});
+
