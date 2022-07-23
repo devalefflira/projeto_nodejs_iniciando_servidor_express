@@ -2,7 +2,7 @@
   "name": "projeto_iniciando_servidor_express",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./index.js",
   "type": "module",
   "scripts": {
     "start": "node index.js",
