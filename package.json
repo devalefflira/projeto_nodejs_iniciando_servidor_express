@@ -5,7 +5,8 @@
   "main": "./api-rest/index.js",
   "type": "module",
   "scripts": {
-    "start": "node .",
+    "start": "node ./api-rest/index.js",
+
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

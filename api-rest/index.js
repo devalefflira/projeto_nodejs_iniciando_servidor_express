@@ -2,7 +2,7 @@ import express, { request } from 'express';
 import { StatusCodes } from 'http-status-codes';
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 let users = [
   { id: 1, name: 'Aleff Lira', age: 28 },
@@ -68,4 +68,3 @@ app.delete('/users/:userId', (request, response) => {
 
   return response.status(StatusCodes.NO_CONTENT).send();
 });
-
